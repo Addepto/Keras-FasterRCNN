@@ -1,9 +1,7 @@
 Keras Faster-RCNN
 ==================================
 
-Faster-RCNN implemented in Keras based on article "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks".
-
-# USAGE:
+Faster-RCNN implemented in Keras based on article "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks":
 
 - `train_frcnn.py` can be used to train a model. To train on Pascal VOC data, simply do:
 
