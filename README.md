@@ -3,14 +3,7 @@ Keras Faster-RCNN
 
 Faster-RCNN implemented in Keras based on article "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks":
 
-- `train_frcnn.py` can be used to train a model. To train on Pascal VOC data, simply do:
-
-```
-python train_frcnn.py -p /path/to/pascalvoc/
-```
-
-- the Pascal VOC data set (images and annotations for bounding boxes around the classified objects) can be obtained from: http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
-- simple_parser.py provides an alternative way to input data, using a text file. Simply provide a text file, with each
+- simple_parser.py provides a way to input data, using a text file. Simply provide a text file, with each
 line containing:
 
     `filepath,x1,y1,x2,y2,class_name`
@@ -22,7 +15,7 @@ line containing:
     /data/imgs/img_002.jpg,215,312,279,391,cat
 
     The classes will be inferred from the file. To use the simple parser
-    use the command line option `-o simple`. For example 
+    use the command line option `-o simple`. For example to train a model: 
 	
 ```
 python train_frcnn.py -o simple -p my_data.txt
